@@ -1,12 +1,15 @@
 import express from 'express';
 import userRoute from './routes/user.route';
-import mongoDBConnection from './databases/db';
+import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 dotenv.config();
 
-const { PORT } = process.env;
+const { PORT, MONGO_URI } = process.env;
 
-mongoDBConnection.connectDB();
+mongoose
+  .connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('Database connected'))
+  .catch(() => console.log('Database is not connected'));
 
 const app = express();
 

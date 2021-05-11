@@ -4,7 +4,7 @@ var _express = _interopRequireDefault(require("express"));
 
 var _user = _interopRequireDefault(require("./routes/user.route"));
 
-var _db = _interopRequireDefault(require("./databases/db"));
+var _mongoose = _interopRequireDefault(require("mongoose"));
 
 var _dotenv = _interopRequireDefault(require("dotenv"));
 
@@ -12,9 +12,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 _dotenv["default"].config();
 
-var PORT = process.env.PORT;
+var _process$env = process.env,
+    PORT = _process$env.PORT,
+    MONGO_URI = _process$env.MONGO_URI;
 
-_db["default"].connectDB();
+_mongoose["default"].connect(MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}).then(function () {
+  return console.log('Database connected');
+})["catch"](function () {
+  return console.log('Database is not connected');
+});
 
 var app = (0, _express["default"])();
 app.use(_express["default"].json());
