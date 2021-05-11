@@ -48,6 +48,6 @@ The NodeJS Backend Task to make use of the CRUD Operation in Creating, Reading, 
 
 [Github](https://github.com/Alao-Abiodun/I4G-Zuri)
 
-## Heroku
+## Hosted link on Heroku
 
 [Heroku](https://agile-river-75390.herokuapp.com/)
