@@ -43,3 +43,11 @@ The NodeJS Backend Task to make use of the CRUD Operation in Creating, Reading, 
 | Request Parameter | Type       | Description                        |
 | :---------------- | :--------- | :--------------------------------- |
 | `id`              | `ObjectId` | **Required**. Id of user to delete |
+
+## Github
+
+[Github](https://github.com/Alao-Abiodun/I4G-Zuri)
+
+## Heroku
+
+[Heroku](https://agile-river-75390.herokuapp.com/)
