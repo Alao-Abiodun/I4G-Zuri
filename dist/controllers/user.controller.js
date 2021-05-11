@@ -5,6 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
+const regeneratorRuntime = require('regenerator-runtime');
+
 var _user = _interopRequireDefault(require("../models/user.model"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
