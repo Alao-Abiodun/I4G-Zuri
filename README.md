@@ -20,7 +20,7 @@ The NodeJS Backend Task to make use of the CRUD Operation in Creating, Reading, 
   POST /api/v1/users
 ```
 
-| Parameter                  | Type     | Description   |
+| Request Body               | Type     | Description   |
 | :------------------------- | :------- | :------------ |
 | `name`, `email`, `country` | `string` | **Required**. |
 
@@ -30,9 +30,9 @@ The NodeJS Backend Task to make use of the CRUD Operation in Creating, Reading, 
   UPDATE /api/v1/user/:id
 ```
 
-| Parameter | Type       | Description                        |
-| :-------- | :--------- | :--------------------------------- |
-| `id`      | `ObjectId` | **Required**. Id of user to update |
+| Request Parameter | Type       | Description                        |
+| :---------------- | :--------- | :--------------------------------- |
+| `id`              | `ObjectId` | **Required**. Id of user to update |
 
 #### @Desc Remove a user
 
@@ -40,6 +40,6 @@ The NodeJS Backend Task to make use of the CRUD Operation in Creating, Reading, 
   DELETE /api/v1/user/:id
 ```
 
-| Parameter | Type       | Description                        |
-| :-------- | :--------- | :--------------------------------- |
-| `id`      | `ObjectId` | **Required**. Id of user to delete |
+| Request Parameter | Type       | Description                        |
+| :---------------- | :--------- | :--------------------------------- |
+| `id`              | `ObjectId` | **Required**. Id of user to delete |
