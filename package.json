@@ -1,0 +1,28 @@
+{
+  "name": "zuri-express",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "https://github.com/github.com/Alao-Abiodun",
+  "author": "Alao Abiodun AbdulRahman",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha test.js",
+    "build": "babel src --out-dir dist",
+    "dev": "nodemon ./src/app.js --exec babel-node",
+    "start": "node ./src/app.js"
+  },
+  "dependencies": {
+    "dotenv": "^9.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.14.1",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "nodemon": "^2.0.7"
+  }
+}
