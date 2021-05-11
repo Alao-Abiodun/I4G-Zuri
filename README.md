@@ -27,7 +27,7 @@ The NodeJS Backend Task to make use of the CRUD Operation in Creating, Reading, 
 #### @Desc Update a user
 
 ```http
-  UPDATE /api/v1/user/:id
+  UPDATE /api/v1/user/${id}
 ```
 
 | Request Parameter | Type       | Description                        |
@@ -37,7 +37,7 @@ The NodeJS Backend Task to make use of the CRUD Operation in Creating, Reading, 
 #### @Desc Remove a user
 
 ```http
-  DELETE /api/v1/user/:id
+  DELETE /api/v1/user/${id}
 ```
 
 | Request Parameter | Type       | Description                        |
