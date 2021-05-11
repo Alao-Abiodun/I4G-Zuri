@@ -39,16 +39,6 @@ const userController = {
 
   async updateUser(req, res) {
     try {
-      // const updates = Object.keys(req.body);
-      // const allowUpdates = [name, email, country];
-      // const isValidUpdates = updates.forEach(update =>
-      //   allowUpdates.includes(update)
-      // );
-      // if (!isValidUpdates) {
-      //   return res.status(400).json({
-      //     message: 'Invalid Updates',
-      //   });
-      // }
       const { id } = req.params;
       const { name, email, country } = req.body;
       const user = await User.findOneAndUpdate(
