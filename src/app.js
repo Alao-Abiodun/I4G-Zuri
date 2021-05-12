@@ -19,7 +19,7 @@ const port = PORT || 3422;
 
 app.get('/', (req, res) => {
   res.json({
-    message: 'The Express Application is Open 😀😀😀',
+    message: 'The Express Application is Open 😀😀😀😀😀',
   });
 });
 
