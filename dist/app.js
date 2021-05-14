@@ -6,6 +6,10 @@ var _user = _interopRequireDefault(require("./routes/user.route"));
 
 var _mongoose = _interopRequireDefault(require("mongoose"));
 
+require("core-js/stable");
+
+require("regenerator-runtime/runtime");
+
 var _dotenv = _interopRequireDefault(require("dotenv"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
@@ -30,7 +34,7 @@ app.use(_express["default"].json());
 var port = PORT || 3422;
 app.get('/', function (req, res) {
   res.json({
-    message: 'The Express Application is Open 😀😀😀'
+    message: 'The Express Application is Open 😀😀😀😀😀'
   });
 });
 app.use('/api/v1', _user["default"]);

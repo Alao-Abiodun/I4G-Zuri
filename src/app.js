@@ -1,6 +1,8 @@
 import express from 'express';
 import userRoute from './routes/user.route';
 import mongoose from 'mongoose';
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 import dotenv from 'dotenv';
 dotenv.config();
 
