@@ -9,6 +9,7 @@ The NodeJS Backend Task to make use of the CRUD Operation in Creating, Reading, 
 ```http
   GET /api/v1/users
 ```
+- https://agile-river-75390.herokuapp.com/api/v1/users
 
 | Parameter    | Type   | Description |
 | :----------- | :----- | :---------- |
@@ -17,8 +18,9 @@ The NodeJS Backend Task to make use of the CRUD Operation in Creating, Reading, 
 #### @Desc Save a user
 
 ```http
-  POST /api/v1/users
+  POST /api/v1/user
 ```
+- https://agile-river-75390.herokuapp.com/api/v1/user
 
 | Request Body               | Type     | Description   |
 | :------------------------- | :------- | :------------ |
@@ -29,6 +31,7 @@ The NodeJS Backend Task to make use of the CRUD Operation in Creating, Reading, 
 ```http
   UPDATE /api/v1/user/${id}
 ```
+- https://agile-river-75390.herokuapp.com/api/v1/user/60a6dd71e71f780015e9b967
 
 | Request Parameter | Type       | Description                        |
 | :---------------- | :--------- | :--------------------------------- |
@@ -39,6 +42,7 @@ The NodeJS Backend Task to make use of the CRUD Operation in Creating, Reading, 
 ```http
   DELETE /api/v1/user/${id}
 ```
+- https://agile-river-75390.herokuapp.com/api/v1/user/609a4e71e7f9cb0d88ee1895
 
 | Request Parameter | Type       | Description                        |
 | :---------------- | :--------- | :--------------------------------- |
