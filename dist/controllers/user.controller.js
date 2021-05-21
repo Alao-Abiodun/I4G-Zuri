@@ -111,50 +111,43 @@ var userController = {
   },
   updateUser: function updateUser(req, res) {
     return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3() {
-      var id, _req$body2, name, email, country, user;
-
+      var id, user;
       return regeneratorRuntime.wrap(function _callee3$(_context3) {
         while (1) {
           switch (_context3.prev = _context3.next) {
             case 0:
               _context3.prev = 0;
               id = req.params.id;
-              _req$body2 = req.body, name = _req$body2.name, email = _req$body2.email, country = _req$body2.country;
-              _context3.next = 5;
+              _context3.next = 4;
               return _user["default"].findOneAndUpdate({
                 _id: id
-              }, {
-                name: name,
-                email: email,
-                country: country
-              }, {
+              }, req.body, {
                 "new": true,
-                upsert: true
-              }, {
-                useFindAndModify: false
+                upsert: true,
+                runValidators: true
               });
 
-            case 5:
+            case 4:
               user = _context3.sent;
               return _context3.abrupt("return", res.status(200).json({
                 message: 'User updated successfully',
                 data: user
               }));
 
-            case 9:
-              _context3.prev = 9;
+            case 8:
+              _context3.prev = 8;
               _context3.t0 = _context3["catch"](0);
               console.log(_context3.t0);
-              return _context3.abrupt("return", res.status(404).json({
+              return _context3.abrupt("return", res.status(500).json({
                 message: _context3.t0
               }));
 
-            case 13:
+            case 12:
             case "end":
               return _context3.stop();
           }
         }
-      }, _callee3, null, [[0, 9]]);
+      }, _callee3, null, [[0, 8]]);
     }))();
   },
   removeUser: function removeUser(req, res) {
@@ -169,8 +162,6 @@ var userController = {
               _context4.next = 4;
               return _user["default"].findOneAndDelete({
                 _id: id
-              }, {
-                useFindAndModify: false
               });
 
             case 4:
@@ -183,7 +174,7 @@ var userController = {
             case 8:
               _context4.prev = 8;
               _context4.t0 = _context4["catch"](0);
-              return _context4.abrupt("return", res.status(404).json({
+              return _context4.abrupt("return", res.status(500).json({
                 message: _context4.t0
               }));
 

@@ -9,7 +9,9 @@
     "test": "mocha test.js",
     "build": "babel src --out-dir dist",
     "dev": "nodemon ./src/app.js --exec babel-node",
-    "start": "node ./dist/app.js"
+    "start-dev": "node ./src/app.js",
+    "start": "node ./dist/app.js",
+    "start-build": "nodemon ./dist/app.js"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",

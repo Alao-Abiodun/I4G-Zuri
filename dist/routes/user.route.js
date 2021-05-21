@@ -15,7 +15,7 @@ var router = _express["default"].Router();
 
 router.get('/users', _user["default"].retrieveUsers);
 router.post('/user', _user["default"].addUser);
-router.put('/user/:id', _user["default"].updateUser);
+router.patch('/user/:id', _user["default"].updateUser);
 router["delete"]('/user/:id', _user["default"].removeUser);
 var _default = router;
 exports["default"] = _default;
